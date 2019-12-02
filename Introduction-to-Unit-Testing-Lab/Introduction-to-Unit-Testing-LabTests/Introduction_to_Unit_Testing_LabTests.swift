@@ -19,16 +19,18 @@ class Introduction_to_Unit_Testing_LabTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testReadingDataFromRandomUser() {
+        // want to check the data from the json is avaiable?
+        
+        // arrange : which is what we need assess to?
+        let filename = "Joke"
+        let ext = "json"
+        
+        // act : an action.. initiating the action to the data
+        let data = Bundle.readRawJSONfile(filename: filename, ext: ext)
+        
+        //
+        XCTAssertNotNil(data)
     }
 
 }

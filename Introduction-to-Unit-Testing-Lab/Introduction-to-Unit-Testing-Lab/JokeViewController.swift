@@ -9,6 +9,10 @@
 import UIKit
 
 class JokeViewController: UIViewController {
+    // the json is an array
+    
+    // want to show the setUps..
+    // once a set up is selected then you show the punchline
 
     override func viewDidLoad() {
         super.viewDidLoad()
