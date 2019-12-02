@@ -14,7 +14,19 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="21P-4f-77X">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="21P-4f-77X" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="KKN-XX-3uR"/>
+                            <constraint firstItem="21P-4f-77X" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PgH-1f-bhs"/>
+                            <constraint firstAttribute="bottom" secondItem="21P-4f-77X" secondAttribute="bottom" id="PhJ-Mf-4le"/>
+                            <constraint firstItem="21P-4f-77X" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="qrk-Ws-fdD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="eEE-T8-HD2"/>
@@ -29,6 +41,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="z8M-Y6-Erg" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NJ8-Ia-uCG">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -49,7 +62,19 @@
                     <view key="view" contentMode="scaleToFill" id="9kf-DK-Aut">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6DW-tE-PJB">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="6DW-tE-PJB" secondAttribute="bottom" id="NU5-x2-BkV"/>
+                            <constraint firstItem="6DW-tE-PJB" firstAttribute="leading" secondItem="TsJ-7R-s0f" secondAttribute="leading" id="cBA-XP-CmD"/>
+                            <constraint firstItem="6DW-tE-PJB" firstAttribute="trailing" secondItem="TsJ-7R-s0f" secondAttribute="trailing" id="ek8-Ut-Wbq"/>
+                            <constraint firstItem="6DW-tE-PJB" firstAttribute="top" secondItem="9kf-DK-Aut" secondAttribute="top" id="kbU-Xu-cmU"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="TsJ-7R-s0f"/>
                     </view>
                     <navigationItem key="navigationItem" id="Eqo-Hi-bTm"/>
@@ -84,7 +109,19 @@
                     <view key="view" contentMode="scaleToFill" id="Rda-wN-j5N">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yqF-E7-1Br">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="yqF-E7-1Br" secondAttribute="bottom" id="2eL-HM-7co"/>
+                            <constraint firstItem="yqF-E7-1Br" firstAttribute="trailing" secondItem="BVv-yz-eWQ" secondAttribute="trailing" id="Y8N-3G-G0N"/>
+                            <constraint firstItem="yqF-E7-1Br" firstAttribute="top" secondItem="Rda-wN-j5N" secondAttribute="top" id="Ygr-51-aEW"/>
+                            <constraint firstItem="yqF-E7-1Br" firstAttribute="leading" secondItem="BVv-yz-eWQ" secondAttribute="leading" id="g7R-Re-fTZ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="BVv-yz-eWQ"/>
                     </view>
                     <navigationItem key="navigationItem" id="Kqa-5W-O56"/>
