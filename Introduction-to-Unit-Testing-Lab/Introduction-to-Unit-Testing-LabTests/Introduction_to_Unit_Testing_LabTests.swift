@@ -71,6 +71,18 @@ class Introduction_to_Unit_Testing_LabTests: XCTestCase {
         XCTAssertEqual(firstJokeSetup, expectedFirstJokeSetup, "\(String(describing: firstJokeSetup)) should say \(expectedFirstJokeSetup)")
         
     }
+    
+    func testFirstJokePunchline() {
+        //assign
+        let expectedJokePunchline =
+        "Because Oct 31 == Dec 25"
+        
+        // action
+        let firstJokePunchline = getJokes().first?.punchline
+        
+        // assert
+        XCTAssertEqual(expectedJokePunchline, firstJokePunchline, "The jokes are the same...")
+    }
 
 }
 
