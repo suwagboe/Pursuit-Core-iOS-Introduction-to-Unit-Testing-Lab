@@ -10,6 +10,10 @@ import XCTest
 @testable import Introduction_to_Unit_Testing_Lab
 
 class Introduction_to_Unit_Testing_LabTests: XCTestCase {
+    
+    //arrange
+    let filename = "Joke"
+           let ext = "json"
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -23,8 +27,8 @@ class Introduction_to_Unit_Testing_LabTests: XCTestCase {
         // want to check the data from the json is avaiable?
         
         // arrange : which is what we need assess to?
-        let filename = "Joke"
-        let ext = "json"
+      let filename = "Joke"
+             let ext = "json"
         
         // act : an action.. initiating the action to the data
         let data = Bundle.readRawJSONfile(filename: filename, ext: ext)
@@ -36,10 +40,10 @@ class Introduction_to_Unit_Testing_LabTests: XCTestCase {
         // get the data and test the users array
         
         // arrange ??
-        let fileName = "Joke"
+        let filename = "Joke"
         let ext = "json"
         
-        let data = Bundle.readRawJSONfile(filename: fileName, ext: ext)
+        let data = Bundle.readRawJSONfile(filename: filename, ext: ext)
         
         //act
         // why is lowercase data
@@ -51,8 +55,40 @@ class Introduction_to_Unit_Testing_LabTests: XCTestCase {
         
     }
     
-    func checkTheFirstJoke () {
+    func testCheckTheFirstJoke() {
+        //assign
+        let expectedFirstJokeSetup =
+        """
+        Why do programmers always mix up Halloween and Christmas?
+        """
         
+        // because of the extension that has the function getJokes I am now able to access the the data of jokes and access the first joke and then more specifically the setup of the first joke.
+        
+        //action.. what I need to access specifically.. what I want to check
+        let firstJokeSetup = getJokes().first?.setup
+        
+        //assert
+        XCTAssertEqual(firstJokeSetup, expectedFirstJokeSetup, "\(String(describing: firstJokeSetup)) should say \(expectedFirstJokeSetup)")
+        
+    }
+
+}
+
+extension Introduction_to_Unit_Testing_LabTests {
+    
+    func getRawData() -> Data {
+        let data = Bundle.readRawJSONfile(filename: filename, ext: ext)
+        return data
+    }
+    
+    
+    func getJokes() -> [JokeData] {
+        // this is the data
+        let data = getRawData()
+        
+        //this get the data from above and filters it out based on what is wanted through the getJokes static function
+        let jokes = JokeData.getJokes(from: data)
+       return jokes
     }
 
 }

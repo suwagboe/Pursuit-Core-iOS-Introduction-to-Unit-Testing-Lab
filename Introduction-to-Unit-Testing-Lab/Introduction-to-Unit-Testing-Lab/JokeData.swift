@@ -22,6 +22,7 @@ extension JokeData {
     static func getJokes(from data: Data) -> [JokeData] {
         var joke = [JokeData]()
         do {
+            // need to better understand what is happening here. 
             let assignedJoke = try JSONDecoder().decode([JokeData].self, from: data)
             joke = assignedJoke
         }catch{
