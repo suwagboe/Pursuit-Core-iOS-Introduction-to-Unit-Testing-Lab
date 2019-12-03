@@ -16,8 +16,10 @@ class JokeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        // loadData()
     }
+    // need to make a function to load the data
 
 
 }

@@ -29,8 +29,30 @@ class Introduction_to_Unit_Testing_LabTests: XCTestCase {
         // act : an action.. initiating the action to the data
         let data = Bundle.readRawJSONfile(filename: filename, ext: ext)
         
-        //
         XCTAssertNotNil(data)
+    }
+    
+    func testParaseJSONDatatoUserArray() {
+        // get the data and test the users array
+        
+        // arrange ??
+        let fileName = "Joke"
+        let ext = "json"
+        
+        let data = Bundle.readRawJSONfile(filename: fileName, ext: ext)
+        
+        //act
+        // why is lowercase data
+        let jokes = JokeData.getJokes(from: data)
+        
+        // assert
+        // because this is the data you want to check if there is any data at all being passed meaning that it should be greater than 0..
+        XCTAssertGreaterThan(jokes.count, 0, "the amount of jokes there are it \(jokes.count)")
+        
+    }
+    
+    func checkTheFirstJoke () {
+        
     }
 
 }
