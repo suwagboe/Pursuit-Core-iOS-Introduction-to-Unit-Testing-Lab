@@ -19,6 +19,8 @@
 		3CA2384C2395BBA100FE99D6 /* Joke.json in Resources */ = {isa = PBXBuildFile; fileRef = 3CA2384B2395BBA100FE99D6 /* Joke.json */; };
 		3CA2384E2395BFA400FE99D6 /* joke Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA2384D2395BFA400FE99D6 /* joke Bundle+Extension.swift */; };
 		3CA238502395C4A700FE99D6 /* JokeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA2384F2395C4A700FE99D6 /* JokeData.swift */; };
+		55691C9923A1908A008A66FB /* StarWarsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55691C9823A1908A008A66FB /* StarWarsData.swift */; };
+		55691C9B23A190DD008A66FB /* startWars.json in Resources */ = {isa = PBXBuildFile; fileRef = 55691C9A23A190DD008A66FB /* startWars.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		3CA2384B2395BBA100FE99D6 /* Joke.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Joke.json; sourceTree = "<group>"; };
 		3CA2384D2395BFA400FE99D6 /* joke Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "joke Bundle+Extension.swift"; sourceTree = "<group>"; };
 		3CA2384F2395C4A700FE99D6 /* JokeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeData.swift; sourceTree = "<group>"; };
+		55691C9823A1908A008A66FB /* StarWarsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWarsData.swift; sourceTree = "<group>"; };
+		55691C9A23A190DD008A66FB /* startWars.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = startWars.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,12 +93,8 @@
 		3C8EC4112395B63D00967583 /* Introduction-to-Unit-Testing-Lab */ = {
 			isa = PBXGroup;
 			children = (
+				55691C9623A18DCF008A66FB /* JokeStuff */,
 				3C8EC4182395B63D00967583 /* Main.storyboard */,
-				3C8EC4162395B63D00967583 /* JokeViewController.swift */,
-				3CA2384B2395BBA100FE99D6 /* Joke.json */,
-				3CA2384F2395C4A700FE99D6 /* JokeData.swift */,
-				3CA2384D2395BFA400FE99D6 /* joke Bundle+Extension.swift */,
-				3CA238472395BB0C00FE99D6 /* StarWarsViewController.swift */,
 				3CA238492395BB1E00FE99D6 /* TriviaViewController.swift */,
 				3C8EC41B2395B63F00967583 /* Assets.xcassets */,
 				3C8EC4122395B63D00967583 /* AppDelegate.swift */,
@@ -112,6 +112,28 @@
 				3C8EC42B2395B63F00967583 /* Info.plist */,
 			);
 			path = "Introduction-to-Unit-Testing-LabTests";
+			sourceTree = "<group>";
+		};
+		55691C9623A18DCF008A66FB /* JokeStuff */ = {
+			isa = PBXGroup;
+			children = (
+				3CA2384B2395BBA100FE99D6 /* Joke.json */,
+				3CA2384D2395BFA400FE99D6 /* joke Bundle+Extension.swift */,
+				3CA2384F2395C4A700FE99D6 /* JokeData.swift */,
+				3C8EC4162395B63D00967583 /* JokeViewController.swift */,
+				55691C9723A19063008A66FB /* StarWars */,
+			);
+			path = JokeStuff;
+			sourceTree = "<group>";
+		};
+		55691C9723A19063008A66FB /* StarWars */ = {
+			isa = PBXGroup;
+			children = (
+				3CA238472395BB0C00FE99D6 /* StarWarsViewController.swift */,
+				55691C9823A1908A008A66FB /* StarWarsData.swift */,
+				55691C9A23A190DD008A66FB /* startWars.json */,
+			);
+			path = StarWars;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +220,7 @@
 				3C8EC41F2395B63F00967583 /* LaunchScreen.storyboard in Resources */,
 				3C8EC41C2395B63F00967583 /* Assets.xcassets in Resources */,
 				3CA2384C2395BBA100FE99D6 /* Joke.json in Resources */,
+				55691C9B23A190DD008A66FB /* startWars.json in Resources */,
 				3C8EC41A2395B63D00967583 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,6 +245,7 @@
 				3C8EC4132395B63D00967583 /* AppDelegate.swift in Sources */,
 				3C8EC4152395B63D00967583 /* SceneDelegate.swift in Sources */,
 				3CA238502395C4A700FE99D6 /* JokeData.swift in Sources */,
+				55691C9923A1908A008A66FB /* StarWarsData.swift in Sources */,
 				3CA2384E2395BFA400FE99D6 /* joke Bundle+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

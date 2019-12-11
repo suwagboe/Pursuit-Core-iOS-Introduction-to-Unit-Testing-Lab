@@ -12,8 +12,7 @@ import XCTest
 class Introduction_to_Unit_Testing_LabTests: XCTestCase {
     
     //arrange
-    let filename = "Joke"
-           let ext = "json"
+
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -88,13 +87,20 @@ class Introduction_to_Unit_Testing_LabTests: XCTestCase {
 
 extension Introduction_to_Unit_Testing_LabTests {
     
+    
     func getRawData() -> Data {
+        let filename = "Joke"
+               let ext = "json"
+
         let data = Bundle.readRawJSONfile(filename: filename, ext: ext)
         return data
     }
     
     
     func getJokes() -> [JokeData] {
+        let filename = "Joke"
+               let ext = "json"
+
         // this is the data
         let data = getRawData()
         
@@ -103,4 +109,16 @@ extension Introduction_to_Unit_Testing_LabTests {
        return jokes
     }
 
+}
+
+extension Introduction_to_Unit_Testing_LabTests {
+    func getAmountOfMovies() -> Data {
+        let filename = "starWars"
+        let ex = "json"
+        
+      //  let data = Bun
+        
+    }
+    
+    
 }

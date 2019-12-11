@@ -13,6 +13,8 @@ class JokeViewController: UIViewController {
     
     // want to show the setUps..
     // once a set up is selected then you show the punchline
+    
+   // var allJokes = [JokesData]
 
     override func viewDidLoad() {
         super.viewDidLoad()
