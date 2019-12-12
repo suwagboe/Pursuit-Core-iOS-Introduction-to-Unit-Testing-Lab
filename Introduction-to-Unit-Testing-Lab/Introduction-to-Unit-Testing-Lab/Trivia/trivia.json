@@ -1,0 +1,117 @@
+{
+    "response_code": 0,
+    "results": [
+        {
+            "category": "Entertainment%3A%20Video%20Games",
+            "type": "boolean",
+            "difficulty": "easy",
+            "question": "The%20Mann%20Co.%20Store%20from%20Team%20Fortress%202%20has%20the%20slogan%20%22We%20hire%20mercenaries%20and%20get%20in%20fights%22.",
+            "correct_answer": "False",
+            "incorrect_answers": [
+                "True"
+            ]
+        },
+        {
+            "category": "Entertainment%3A%20Video%20Games",
+            "type": "boolean",
+            "difficulty": "easy",
+            "question": "Niko%20Bellic%20is%20the%20protagonist%20of%20Grand%20Theft%20Auto%20IV.",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ]
+        },
+        {
+            "category": "Entertainment%3A%20Video%20Games",
+            "type": "boolean",
+            "difficulty": "easy",
+            "question": "Deus%20Ex%20%282000%29%20does%20not%20feature%20the%20World%20Trade%20Center%20because%20it%20was%20destroyed%20by%20terrorist%20attacks%20according%20to%20the%20game%27s%20plot.",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ]
+        },
+        {
+            "category": "Entertainment%3A%20Video%20Games",
+            "type": "multiple",
+            "difficulty": "easy",
+            "question": "How%20many%20differently%20shaped%20Tetris%20pieces%20are%20there%3F",
+            "correct_answer": "7",
+            "incorrect_answers": [
+                "5",
+                "6",
+                "8"
+            ]
+        },
+        {
+            "category": "History",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "Which%20Nation%20DID%20NOT%20have%20a%20Colony%20in%20Modern-day%20America%3F",
+            "correct_answer": "Portugal",
+            "incorrect_answers": [
+                "Spain",
+                "Sweden",
+                "Netherlands"
+            ]
+        },
+        {
+            "category": "Entertainment%3A%20Video%20Games",
+            "type": "boolean",
+            "difficulty": "medium",
+            "question": "Mortal%20Kombat%20was%20almost%20based%20on%20Jean-Claude%20Van%20Damme%20movie.",
+            "correct_answer": "True",
+            "incorrect_answers": [
+                "False"
+            ]
+        },
+        {
+            "category": "Entertainment%3A%20Video%20Games",
+            "type": "multiple",
+            "difficulty": "hard",
+            "question": "Which%20character%20from%20the%20Mega%20Man%20series%20made%20a%20small%20cameo%20on%20Volt%20Catfish%27s%20introduction%20scene%20in%20CD%20versions%20of%20Mega%20Man%20X3%3F",
+            "correct_answer": "Auto",
+            "incorrect_answers": [
+                "Eddie",
+                "Tango",
+                "Rush"
+            ]
+        },
+        {
+            "category": "Science%3A%20Computers",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "What%20does%20the%20term%20MIME%20stand%20for%2C%20in%20regards%20to%20computing%3F",
+            "correct_answer": "Multipurpose%20Internet%20Mail%20Extensions",
+            "incorrect_answers": [
+                "Mail%20Internet%20Mail%20Exchange",
+                "Multipurpose%20Interleave%20Mail%20Exchange",
+                "Mail%20Interleave%20Method%20Exchange"
+            ]
+        },
+        {
+            "category": "Entertainment%3A%20Music",
+            "type": "multiple",
+            "difficulty": "medium",
+            "question": "Where%20did%20the%20British%20Boy%20Band%20%22Bros%22%20come%20from%3F",
+            "correct_answer": "Camberley",
+            "incorrect_answers": [
+                "Guildford",
+                "Aldershot",
+                "Bagshot"
+            ]
+        },
+        {
+            "category": "Sports",
+            "type": "multiple",
+            "difficulty": "easy",
+            "question": "Which%20boxer%20was%20banned%20for%20taking%20a%20bite%20out%20of%20Evander%20Holyfield%27s%20ear%20in%201997%3F",
+            "correct_answer": "Mike%20Tyson",
+            "incorrect_answers": [
+                "Roy%20Jones%20Jr.",
+                "Evander%20Holyfield",
+                "Lennox%20Lewis"
+            ]
+        }
+    ]
+}

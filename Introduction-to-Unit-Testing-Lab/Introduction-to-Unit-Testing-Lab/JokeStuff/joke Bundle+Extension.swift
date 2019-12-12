@@ -9,6 +9,7 @@
 import Foundation
 
 // why are we labeling the bundle as an extenstion?? what is Bundle originally.
+// why are we labeling the bundle as an extenstion?? what is Bundle originally.
 extension Bundle{
     static func readRawJSONfile(filename: String, ext: String) -> Data {
         //fileURL = Bundle.readRawJSONfile(filename: "joke", ext: "json") when is this used

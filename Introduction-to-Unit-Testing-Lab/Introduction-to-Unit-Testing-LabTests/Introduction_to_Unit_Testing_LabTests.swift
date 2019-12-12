@@ -112,11 +112,13 @@ extension Introduction_to_Unit_Testing_LabTests {
 }
 
 extension Introduction_to_Unit_Testing_LabTests {
-    func getAmountOfMovies() -> Data {
-        let filename = "starWars"
-        let ex = "json"
+    func testTotalMovies(){ //-> [Movie] {
+      
+            let expectedAmount = 7
+ 
+        let moviesTotal = StarWarsInfo.getMovies()
         
-      //  let data = Bun
+        XCTAssertEqual(moviesTotal.count, expectedAmount , "The total is amount of movies should be \(moviesTotal.count)" )
         
     }
     

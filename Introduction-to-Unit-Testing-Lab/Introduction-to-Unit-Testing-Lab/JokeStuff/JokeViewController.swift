@@ -9,6 +9,8 @@
 import UIKit
 
 class JokeViewController: UIViewController {
+    
+   // @iboutlet 
     // the json is an array
     
     // want to show the setUps..

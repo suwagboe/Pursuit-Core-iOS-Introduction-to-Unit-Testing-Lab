@@ -19,10 +19,18 @@ struct JokeData: Codable {
 
 
 extension JokeData {
-    static func getJokes(from data: Data) -> [JokeData] {
+    
+    static func getJokes(from data: Info) -> [JokeData] {
         var joke = [JokeData]()
+        
+        guard let fileURL = Bundle.main.url(forResource: "Joke", withExtension: "json") else {
+            fatalError("data passing into the json is not correct")
+        }
+        
         do {
-            // need to better understand what is happening here. 
+            // need to better understand what is happening here.
+            let data = try Data(contentsOf: fileURL)
+            
             let assignedJoke = try JSONDecoder().decode([JokeData].self, from: data)
             joke = assignedJoke
         }catch{

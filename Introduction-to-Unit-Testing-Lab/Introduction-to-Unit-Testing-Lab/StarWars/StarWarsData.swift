@@ -9,7 +9,7 @@
 import Foundation
 
 struct StarWarsInfo: Codable {
-    let result: [Movie]// all of the data...
+    let results: [Movie]// all of the data...
 }
 
 struct Movie: Codable {
@@ -29,12 +29,11 @@ extension StarWarsInfo {
         }
         
         do {
-            
             let data = try Data(contentsOf: fileURL)
             
             let specificMovieData = try JSONDecoder().decode(StarWarsInfo.self, from: data)
-            movies = specificMovieData.result
-           
+            movies = specificMovieData.results
+            
         }catch {
             fatalError("developer error: \(error)")
         }
