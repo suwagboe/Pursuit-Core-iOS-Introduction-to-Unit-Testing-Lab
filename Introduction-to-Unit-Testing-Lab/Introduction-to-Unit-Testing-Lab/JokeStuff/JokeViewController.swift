@@ -32,9 +32,7 @@ class JokeViewController: UIViewController {
         guard let JDVC = segue.destination as? JokesDetailViewController, let indexPath = tableView.indexPathForSelectedRow else {
             fatalError("the segue is not correct please check")
         }
-        
         JDVC.seletedJoke = jokes[indexPath.row]
-        
     }
     
 
