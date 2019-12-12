@@ -23,6 +23,7 @@
 		55691C9B23A190DD008A66FB /* starWars.json in Resources */ = {isa = PBXBuildFile; fileRef = 55691C9A23A190DD008A66FB /* starWars.json */; };
 		55E7F28A23A2CF2200681DE7 /* trivia.json in Resources */ = {isa = PBXBuildFile; fileRef = 55E7F28923A2CF2200681DE7 /* trivia.json */; };
 		55E7F28C23A2D0FC00681DE7 /* trivia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E7F28B23A2D0FC00681DE7 /* trivia.swift */; };
+		55E7F28E23A2DC2600681DE7 /* JokesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E7F28D23A2DC2600681DE7 /* JokesDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		55691C9A23A190DD008A66FB /* starWars.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = starWars.json; sourceTree = "<group>"; };
 		55E7F28923A2CF2200681DE7 /* trivia.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = trivia.json; sourceTree = "<group>"; };
 		55E7F28B23A2D0FC00681DE7 /* trivia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trivia.swift; sourceTree = "<group>"; };
+		55E7F28D23A2DC2600681DE7 /* JokesDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 				3CA2384D2395BFA400FE99D6 /* joke Bundle+Extension.swift */,
 				3CA2384F2395C4A700FE99D6 /* JokeData.swift */,
 				3C8EC4162395B63D00967583 /* JokeViewController.swift */,
+				55E7F28D23A2DC2600681DE7 /* JokesDetailViewController.swift */,
 			);
 			path = JokeStuff;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 				3C8EC4132395B63D00967583 /* AppDelegate.swift in Sources */,
 				3C8EC4152395B63D00967583 /* SceneDelegate.swift in Sources */,
 				55E7F28C23A2D0FC00681DE7 /* trivia.swift in Sources */,
+				55E7F28E23A2DC2600681DE7 /* JokesDetailViewController.swift in Sources */,
 				3CA238502395C4A700FE99D6 /* JokeData.swift in Sources */,
 				55691C9923A1908A008A66FB /* StarWarsData.swift in Sources */,
 				3CA2384E2395BFA400FE99D6 /* joke Bundle+Extension.swift in Sources */,

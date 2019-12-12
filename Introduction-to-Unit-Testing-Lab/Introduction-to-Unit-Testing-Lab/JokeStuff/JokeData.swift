@@ -20,7 +20,7 @@ struct JokeData: Codable {
 
 extension JokeData {
     
-    static func getJokes(from data: Info) -> [JokeData] {
+    static func getJokes() -> [JokeData] {
         var joke = [JokeData]()
         
         guard let fileURL = Bundle.main.url(forResource: "Joke", withExtension: "json") else {

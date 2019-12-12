@@ -10,11 +10,11 @@ import Foundation
 
 struct Trivia: Codable {
     
-    let results: [Info]
+    let results: [TriviaInfo]
     
 }
 
-struct Info: Codable {
+struct TriviaInfo: Codable {
     
     let category: String
     let difficulty: String
@@ -30,9 +30,9 @@ struct Answer: Codable {
 
 extension Trivia {
     
-    static func getTriviaData() -> [Info] {
+    static func getTriviaData() -> [TriviaInfo] {
         
-        var questions = [Info]()
+        var questions = [TriviaInfo]()
         
         
         guard let fileURL = Bundle.main.url(forResource: "trivia", withExtension: "json") else {

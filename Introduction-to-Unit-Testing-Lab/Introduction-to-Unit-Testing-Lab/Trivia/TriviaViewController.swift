@@ -12,7 +12,7 @@ class TriviaViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    private var questions = [Trivia]() {
+    private var questions = [TriviaInfo]() {
         didSet {
             tableView.reloadData()
         }
@@ -25,9 +25,7 @@ class TriviaViewController: UIViewController {
         
     }
     
-   func loadData() {
-    //questions = Trivia.
-    }
+   
     
 }
 
