@@ -29,7 +29,13 @@ class StarWarsViewController: UIViewController {
      func loadData() {
         Amovie = StarWarsInfo.getMovies()
      }
-     
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let SWDVC = segue.destination as? StartWarsDetailViewController, let indexPath = tableview.indexPathForSelectedRow else {
+            fatalError("The segue was not proplery excetued")
+        }
+        SWDVC.selectedEpisode = Amovie[indexPath.row]
+    }
     
 
 }

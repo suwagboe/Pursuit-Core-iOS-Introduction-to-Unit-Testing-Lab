@@ -14,6 +14,7 @@ class JokeViewController: UIViewController {
     
     private var jokes = [JokeData](){
         didSet {
+            
             tableView.reloadData()
         }
     }

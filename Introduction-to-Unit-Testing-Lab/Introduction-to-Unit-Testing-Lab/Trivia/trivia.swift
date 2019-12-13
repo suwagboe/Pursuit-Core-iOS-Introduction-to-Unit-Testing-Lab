@@ -20,13 +20,13 @@ struct TriviaInfo: Codable {
     let difficulty: String
     let question: String
     let correct_answer: String
-    let Incorrect_answers: Answer
+  //  let Incorrect_answers: Answer
     
 }
 
-struct Answer: Codable {
-    let IsThisCorrect: String
-}
+//struct Answer: Codable {
+//    let IsThisCorrect: String
+//}
 
 extension Trivia {
     
